@@ -275,7 +275,7 @@ let _App = (function () {
 						if (ifStarterKit) {
 							document
 								.querySelector(".navbar-logo")
-								.setAttribute("src", "/src/assets/logo2.svg");
+								.setAttribute("src", "/logo2.svg");
 						} else {
 							document
 								.querySelector(".navbar-logo")
@@ -308,7 +308,7 @@ let _App = (function () {
 						if (ifStarterKit) {
 							document
 								.querySelector(".navbar-logo")
-								.setAttribute("src", "/src/assets/logo.svg");
+								.setAttribute("src", "/logo.svg");
 						} else {
 							document
 								.querySelector(".navbar-logo")

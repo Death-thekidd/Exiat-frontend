@@ -14,8 +14,8 @@ window.addEventListener("load", function () {
 				darkMode: true,
 				boxed: true,
 				logo: {
-					darkLogo: "/src/assets/logo.svg",
-					lightLogo: "/src/assets/logo2.svg",
+					darkLogo: "/logo.svg",
+					lightLogo: "/logo2.svg",
 				},
 			},
 		},
@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
 				if (document.querySelector(".navbar-logo")) {
 					document
 						.querySelector(".navbar-logo")
-						.setAttribute("src", "/src/assets/logo.svg");
+						.setAttribute("src", "/logo.svg");
 				}
 			} else {
 				if (document.querySelector(".navbar-logo")) {
@@ -88,7 +88,7 @@ window.addEventListener("load", function () {
 				if (document.querySelector(".navbar-logo")) {
 					document
 						.querySelector(".navbar-logo")
-						.setAttribute("src", "/src/assets/logo2.svg");
+						.setAttribute("src", "/logo2.svg");
 				}
 			} else {
 				if (document.querySelector(".navbar-logo")) {
