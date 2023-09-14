@@ -551,6 +551,4 @@ let _App = (function () {
 	};
 })();
 
-window.addEventListener("load", function () {
-	_App.init("layout");
-});
+_App.init("layout");
