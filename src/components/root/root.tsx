@@ -24,7 +24,7 @@ const Root = () => {
 		menuItems.map(() => React.createRef<HTMLLIElement>())
 	);
 
-	const handleClick = (index) => {
+	const handleClick = (index: number) => {
 		setActiveItem(index);
 		// Remove active class from all items
 		itemRefs.current.forEach((itemRef, i) => {
