@@ -22,6 +22,8 @@ window.addEventListener("load", function () {
 		reset: false,
 	};
 
+	corkThemeObject = settingsObject;
+
 	try {
 		if (settingsObject.reset) {
 			localStorage.clear();
@@ -31,7 +33,8 @@ window.addEventListener("load", function () {
 			corkThemeObject = settingsObject;
 		} else {
 			getcorkThemeObject = localStorage.getItem("theme");
-			getParseObject = JSON.parse(getcorkThemeObject);
+			if (getcorkThemeObject === undefined)
+				getParseObject = JSON.parse(getcorkThemeObject);
 			ParsedObject = getParseObject;
 
 			if (getcorkThemeObject !== null) {
