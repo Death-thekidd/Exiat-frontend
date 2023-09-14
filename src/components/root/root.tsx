@@ -20,23 +20,23 @@ const Root = () => {
 			document.body.removeChild(script);
 		};
 	}, []);
-	const itemRefs = useRef(menuItems.map(() => React.createRef()));
+	const itemRefs = useRef<Array<React.RefObject<HTMLLIElement>>>(
+		menuItems.map(() => React.createRef<HTMLLIElement>())
+	);
 
 	const handleClick = (index) => {
 		setActiveItem(index);
 		// Remove active class from all items
 		itemRefs.current.forEach((itemRef, i) => {
 			if (itemRef.current && i !== index) {
-				(itemRef.current as unknown as HTMLDivElement).classList.remove(
-					"active"
-				);
+				itemRef.current.classList.remove("active");
 			}
 		});
 		// Add active class to the clicked item
 		if (itemRefs.current[index].current) {
-			(
-				itemRefs.current[index].current as unknown as HTMLDivElement
-			).classList.add("active");
+			(itemRefs.current[index].current as HTMLLIElement).classList.add(
+				"active"
+			);
 		}
 	};
 
