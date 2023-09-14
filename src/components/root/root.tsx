@@ -9,7 +9,7 @@ const Root = () => {
 	useEffect(() => {
 		// Create a script element
 		const script = document.createElement("script");
-		script.src = "/src/assets/scripts/app.js"; // Replace with the path to your script
+		script.src = "/scripts/app.js"; // Replace with the path to your script
 		script.async = true;
 
 		// Append the script to the document
